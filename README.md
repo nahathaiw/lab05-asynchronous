@@ -1,19 +1,26 @@
-# SS2025_Lab05
+# Lab05 - Asynchronous JavaScript
 
-[Demo](https://lab05-pohan-icesplendent-0f50534f024ef50e1142bdffc2c0f7552bf8f8.gitlab.io/)
+A browser exercise for practicing Promises, `async`/`await`, and parallel asynchronous work. The page simulates loading pieces of random user information, with variable delays and possible failures.
 
-# Grading Policy
+## Intended behavior
 
-- Generate data correctly 30%
+- Fetch a user ID first
+- Request first name, last name, username, email, and address asynchronously
+- Use `Promise.all` to load independent fields in parallel
+- Display an error when any request fails
+- Optionally retry automatically when the resample checkbox is enabled
+- Render the result in a Bootstrap form
 
-- Use async / await 25%
+## Technology
 
-- Generate get_info() first 10%
+- HTML, CSS, and JavaScript
+- Bootstrap
+- Promises and `async`/`await`
 
-- Generate other 5 data at the same time 15%
+## Run locally
 
-  - Promise.all
+Open `index.html` in a browser, or serve the directory with any static web server.
 
-- Show failed in txtInfoName if any data failed 10%
+## Status
 
-- Automatic resample when checked if failed 10%
+The page layout and initial `get_info()` Promise are present, but the remaining data functions and retrieval flow are still marked as TODO.
